@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <style>
+    @font-face {
+      font-family: Symbola;
+      src: url(lib/font/Symbola-basic.woff) format("woff"), url(lib/font/Symbola-basic.ttf) format("truetype");
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="lib/mathquill-basic.css" />
+  <script src="lib/mathquill-basic.js"></script>
+</head>
+<body>
+  <span id="mq">y=x</span>
+
+  <script >
+    var elt = document.getElementById('mq');
+    MQ = MathQuill.getInterface(1);
+    MQ.MathField(elt);
+  </script>
+</body>
+</html>
